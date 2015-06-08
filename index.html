@@ -1,51 +1,33 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
-    <meta charset='utf-8'>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
-
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
     <title>Predicting Crimes In Chicago From Weather by fuyuheng</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
   </head>
-
   <body>
-    <a id="forkme_banner" href="https://github.com/fuyuheng/EECS-349-Project">View on GitHub</a>
-    <div class="shell">
-
+    <div class="wrapper">
       <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Predicting Crimes In Chicago From Weather</h1>
-            <h2>Alan Fu (yuhengfu2017@u.northwestern.edu)</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
+        <h1>Predicting Crimes In Chicago From Weather</h1>
+        <p>Alan Fu (yuhengfu2017@u.northwestern.edu)</p>
+
+        <p class="view"><a href="https://github.com/fuyuheng/EECS-349-Project">View the Project on GitHub <small>fuyuheng/EECS-349-Project</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/fuyuheng/EECS-349-Project/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/fuyuheng/EECS-349-Project/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/fuyuheng/EECS-349-Project">View On <strong>GitHub</strong></a></li>
+        </ul>
       </header>
-
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/fuyuheng/EECS-349-Project/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/fuyuheng/EECS-349-Project/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
-
-
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+      <section>
         <h3>
 <a id="problem" class="anchor" href="#problem" aria-hidden="true"><span class="octicon octicon-link"></span></a>Problem</h3>
 
@@ -68,28 +50,19 @@ Note that 2 means that crime count will be higher than yearly average, while 1 m
 <h3>
 <a id="analysis" class="anchor" href="#analysis" aria-hidden="true"><span class="octicon octicon-link"></span></a>Analysis</h3>
 
-<p>As seen in the simple tree shown above, temperature shows the most dominant relationship with total crime counts in a given day. Contrary to as many would expect, crime counts do not simply increase as temperature increase, but are likely to be higher than yearly average when the temperature is either too high or too low. This insight matches the research results shown in <a href="http://www.nytimes.com/2013/09/01/opinion/sunday/weather-and-violence.html?_r=0">a 2013 New York Times article</a>, which predicts that "episodes of extreme climate make people more violent toward one another". </p>
+<p>As seen in the simple tree shown above, temperature shows the most dominant relationship with total crime counts in a given day. Contrary to as many would expect, crime counts do not simply increase as temperature increase, but are likely to be higher than yearly average when the temperature is either too high or too low. This insight matches the research results shown in <a href="http://www.nytimes.com/2013/09/01/opinion/sunday/weather-and-violence.html?_r=0">a 2013 New York Times article</a>, which concludes that "episodes of extreme climate make people more violent toward one another". While temperature is within a "comfort range", precipitation steps in and predicts that the higher the precipitation, the more likely crime counts will be lower than yearly average. </p>
 
 <h3>
 <a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h3>
 
 <p>This project is conducted by <strong>Alan Fu</strong> (<a href="mailto:yuhengfu2017@u.northwestern.edu">yuhengfu2017@u.northwestern.edu</a>), a sophomore computer science and physics double major student from <strong>Northwestern University</strong>, for the class <em>EECS 349 (Machine Learning)</em>. To learn more about this project such as the data cleanup process, the reason behind categorizing crime counts into binary variables, the results of the exploration of different models for this data set other than J48, more detailed analysis on the trees produced by J48, and suggestions for future work, please read the final report pdf, which is included in the zip package downloadable at the top of this site. </p>
       </section>
-
       <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/fuyuheng">fuyuheng</a> can be found on <a href="https://github.com/fuyuheng/EECS-349-Project">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="https://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+        <p>This project is maintained by <a href="https://github.com/fuyuheng">fuyuheng</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
       </footer>
-
     </div>
-
+    <script src="javascripts/scale.fix.js"></script>
     
   </body>
 </html>
